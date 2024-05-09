@@ -1,5 +1,5 @@
 <!-- plugins:js -->
-<script src="./vendors/js/vendor.bundle.base.js"></script>
+{{-- <script src="./vendors/js/vendor.bundle.base.js"></script> --}}
 <!-- endinject -->
 <!-- Plugin js for this page -->
 
@@ -10,7 +10,7 @@
 {{-- <script src="./js/template.js"></script> --}}
 {{-- <script src="./js/settings.js"></script> --}}
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.0.0/turbolinks.js"></script>
+{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.0.0/turbolinks.js"></script> --}}
 
 
 <!-- End custom js for this page-->
@@ -47,8 +47,8 @@
         //     })
         // }, 5000);
 
-        var Turbolinks = require("turbolinks")
-        Turbolinks.start()
+        // var Turbolinks = require("turbolinks")
+        // Turbolinks.start()
     </script>
 
 

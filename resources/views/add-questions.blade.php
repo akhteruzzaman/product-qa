@@ -15,6 +15,7 @@
           <form method="POST" action="{{ route('save.questions') }}">
           @sessionToken
 
+          <input type="hidden" name="host" value="{{getHost()}}">
             <div class="row mb-3">
               <label for="inputEmail3" class="col-sm-2 col-form-label">Question</label>
               <div class="col-sm-10">
@@ -42,7 +43,7 @@
    
   </div>
 </section>
-
+ @include('partials.scripts')
 
     
 @endsection

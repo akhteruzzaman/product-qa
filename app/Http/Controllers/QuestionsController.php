@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Questions;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\Models\Questions;
+
 
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Redirect;
+require_once app_path('Helpers/shopify.php');
+use URL;
 
 class QuestionsController extends Controller
 {
@@ -36,8 +39,8 @@ class QuestionsController extends Controller
        
         $questions->save();
 
-        return Redirect::tokenRedirect('questions');
-        //$redirectUrl = getRedirectRoute('questions');
-        //return redirect($redirectUrl);
+        //return Redirect::tokenRedirect('questions');
+        $redirectUrl = getRedirectRoute('questions');
+        return redirect($redirectUrl);
     }
 }
